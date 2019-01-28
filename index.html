@@ -19,11 +19,13 @@
     <!-- ======= Navbar ======= -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
+            <!-- ======= Navbar Brand ======= -->
             <a href="#" class="navbar-brand">Aris</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <!-- ======= Navbar Menu ======= -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="#" class="nav-link">Home</a>
@@ -49,20 +51,49 @@
     <div class="jumbotron jumbotron-fluid vh-100 p-0 m-0 bg-light">
         <div class="container-fluid h-100 px-0">
             <div class="row no-gutters h-100">
+                <!-- ======= Left Section ======= -->
                 <div class="bg-dark col-lg-5">
                     <div class="h-100 d-flex flex-column justify-content-center align-items-center text-center">
+                        <!-- ======= Portrait Photo ======= -->
                         <div class="portrait-image">
                             <img src="https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=1b177d6671f123d5382e0df90613f7e7" alt="Aris">
                         </div>
-                        <div class="mt-3">
-                            <h1 class="text-uppercase text-white letter-spacing-5">Alexis Smith</h1>
+                        <!-- ======= Personal Info ======= -->
+                        <div class="mt-4">
+                            <h1 class="text-uppercase text-white letter-spacing-5 font-weight-bold">Alexis Smith</h1>
                             <p class="text-secondary text-uppercase letter-spacing-2">Freelance Web Developer &amp; Photographer</p>
+                            <!-- ======= Social Media Links ======= -->
+                            <ul class="nav justify-content-center mt-4">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                    <a class="section-transition-link position-absolute bottom-0 w-100 text-center" href="#">About Me</a>
                 </div>
-                <div class="col-lg-7">
-                    <div id="homeCarousel" class="carousel home-carousel slide">
+                <!-- ======= Right Section: Carousel ======= -->
+                <div class="d-none d-lg-block col-lg-7">
+                    <div id="homeCarousel" class="carousel home-carousel slide overflow-hidden">
                         <div class="carousel-inner">
+                            <!-- ======= Carousel Item ======= -->
                             <div class="carousel-item active">
                                 <div class="row h-100 no-gutters">
                                     <div class="col">
@@ -87,6 +118,44 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- ======= Carousel Item ======= -->
+                            <div class="carousel-item">
+                                <div class="row h-100 no-gutters">
+                                    <div class="col">
+                                        <!-- ======= Carousel Sub Item ======= -->
+                                        <div class="carousel-sub-item">
+                                            <img src="img/home-carousel/1.jpg" alt="Smart Watches" class="carousel-image">
+                                            <div class="carousel-item-info">
+                                                <h2 class="text-white font-weight-bold">Apple Watches</h2>
+                                                <p class="d-none d-lg-block text-white-50 font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ipsa obcaecati eaque tempora molestias excepturi.</p>
+                                                <a href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- ======= Carousel Sub Item ======= -->
+                                        <div class="carousel-sub-item">
+                                            <img src="img/home-carousel/2.jpg" alt="Smart Watches" class="carousel-image">
+                                            <div class="carousel-item-info">
+                                                <h2 class="text-white font-weight-bold">Vintage Camera</h2>
+                                                <p class="d-none d-lg-block text-white-50 font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ipsa obcaecati eaque tempora molestias excepturi.</p>
+                                                <a href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-controls">
+                            <a class="carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control" href="#homeCarousel" role="button" data-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -94,11 +163,18 @@
         </div>
     </div>
 
+    <!-- ======= Section: About Me ======= -->
+    <section id="about" class="vh-100 bg-dark">
+
+    </section>
+
 
     <!-- ======= JavaScripts ======= -->
     <!-- jQuery -->
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap -->
     <script src="js/vendor/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/vendor/font-awesome.js"></script>
 </body>
 </html>
