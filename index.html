@@ -13,11 +13,11 @@
     <!-- Website Title -->
     <title>Aris</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
     <!-- ======= Body ======= -->
 
     <!-- ======= Navbar ======= -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
             <!-- ======= Navbar Brand ======= -->
             <a href="#" class="navbar-brand">Aris</a>
@@ -28,19 +28,19 @@
                 <!-- ======= Navbar Menu ======= -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Blog</a>
+                        <a href="#blog" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +48,7 @@
     </nav>
 
     <!-- ======= Main Content Area ======= -->
-    <div class="jumbotron jumbotron-fluid vh-100 p-0 m-0 bg-light">
+    <div id="home" class="jumbotron jumbotron-fluid vh-100 p-0 m-0 bg-light">
         <div class="container-fluid h-100 px-0">
             <div class="row no-gutters h-100">
                 <!-- ======= Left Section ======= -->
@@ -63,7 +63,7 @@
                             <h1 class="text-uppercase text-white letter-spacing-5 font-weight-bold">Alexis Smith</h1>
                             <p class="text-secondary text-uppercase letter-spacing-2">Freelance Web Developer &amp; Photographer</p>
                             <!-- ======= Social Media Links ======= -->
-                            <ul class="nav justify-content-center mt-4">
+                            <ul class="nav justify-content-center mt-4 text-white-50">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="fab fa-twitter"></i>
@@ -164,10 +164,169 @@
     </div>
 
     <!-- ======= Section: About Me ======= -->
-    <section id="about" class="vh-100 bg-dark">
-
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <!-- ======= Section Header ======= -->
+            <div class="section-header row text-center text-lg-left">
+                <div class="col-lg-6">
+                    <h1 class="font-weight-bold text-black">About Me</h1>
+                </div>
+                <div class="col-lg-6">
+                    <p class="text-black-50 font-weight-bold">
+                        "Graphic design will save the world right after rock and roll does." - David Carson
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?ixlib=rb-0.3.5&q=80&fm=jpg" alt="Me">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <!-- ======= Personal Information ======= -->
+                    <h2 class="text-black font-weight-light mb-4 mt-5 mt-lg-0">Hello, I'm Alexis Smith</h2>
+                    <p class="text-black-50">
+                        I've been creating digital content for as long as I can remember. It all
+                        started at home where I then took my love for design and decided that this
+                        is what I want to do for the rest of my life. I attended New York's finest 
+                        design schools which gave me the tools and abilities that led me to working
+                        with major companies such as <a href="#">Google</a> and <a href="#">Microsoft</a>.
+                    </p>
+                    <p class="text-black-50">
+                        I've used design to solve many problems that I've been tasked with throughout my
+                        career. You can read my <a href="#">blog</a> where I share my continously growing
+                        knowledge.
+                    </p>
+                    <div class="mt-5 d-flex align-items-center">
+                        <p class="font-weight-bold mb-0">Connect with me: </p>
+                        <!-- ======= Social Media Links ======= -->
+                        <ul class="nav text-black-50">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- ======= Section: Portfolio ======= -->
+    <section id="portfolio" class="section bg-dark">
+        <div class="container">
+            <!-- ======= Section Header ======= -->
+            <div class="section-header row text-center text-lg-left">
+                <div class="col-lg-6">
+                    <h1 class="font-weight-bold text-white">Recent Work</h1>
+                </div>
+                <!-- ======= Portfolio Filter ======= -->
+                <div class="col-lg-6">
+                    <ul class="nav flex-column flex-lg-row justify-content-end portfolio-filters">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Development</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Branding</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ======= Portfolio Items ======= -->
+            <div class="row">
+                <!-- ======= Portfolio Item ======= -->
+                <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/1.jpg" alt="1" class="portfolio-item-image">
+                        <div class="portfolio-item-info">
+                            <h2 class="text-white font-weight-bold">Brown Bags</h2>
+                            <p class="d-none d-lg-block text-white-50 font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ipsa obcaecati eaque tempora molestias excepturi.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ======= Portfolio Item ======= -->
+                <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/2.jpg" alt="2" class="portfolio-item-image">
+                        <div class="portfolio-item-info">
+                            <h2 class="text-white font-weight-bold">White Bags</h2>
+                            <p class="d-none d-lg-block text-white-50 font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ipsa obcaecati eaque tempora molestias excepturi.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ======= Portfolio Item ======= -->
+                <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/3.jpg" alt="3" class="portfolio-item-image">
+                        <div class="portfolio-item-info">
+                            <h2 class="text-white font-weight-bold">Cute Labels</h2>
+                            <p class="d-none d-lg-block text-white-50 font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ipsa obcaecati eaque tempora molestias excepturi.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ======= Portfolio Item ======= -->
+                <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/4.jpg" alt="4" class="portfolio-item-image">
+                        <div class="portfolio-item-info">
+                            <h2 class="text-white font-weight-bold">Custom Boxes</h2>
+                            <p class="d-none d-lg-block text-white-50 font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ipsa obcaecati eaque tempora molestias excepturi.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-light">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Section: Blog ======= -->
+    <section id="blog" class="section bg-light">
+        <div class="container">
+            <!-- ======= Section Header ======= -->
+            <div class="section-header row text-center text-lg-left">
+                <div class="col-lg-6">
+                    <h1 class="font-weight-bold text-black">Recent Posts</h1>
+                </div>
+                <div class="col-lg-6">
+                    <p class="text-black-50 font-weight-bold">
+                        Keep up with the latest trends &amp; topics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ======= JavaScripts ======= -->
     <!-- jQuery -->

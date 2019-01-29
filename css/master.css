@@ -4,19 +4,26 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 160%;
 }
 
 a {
-    color: #666;
+    color: inherit;
     transition: color 0.3s linear;
 }
 
+p a {
+    color: #101010;
+}
+
 a:hover {
-    color: #fff;
+    color: #666;
+    /* filter: saturate(30%); */
 }
 
 /*============================= 
@@ -27,8 +34,12 @@ a:hover {
     background-color: #101010 !important;
 }
 
+.bg-black {
+    background-color: black;
+}
+
 .bg-light {
-    background-color: #fff !important;
+    background-color: #f3f3f3 !important;
 }
 
 .letter-spacing-5 {
@@ -41,6 +52,10 @@ a:hover {
 
 .bottom-0 {
     bottom: 0;
+}
+
+.object-cover {
+    object-fit: cover;
 }
 
 /*============================= 
@@ -139,14 +154,10 @@ a:hover {
 .home-carousel .carousel-controls {
    position: absolute;
    bottom: 0;
-   right: 0;
+   left: 0;
    display: flex;
-   opacity: 0.5;
+   opacity: 1;
    transition: opacity 0.3s linear;
-}
-
-.home-carousel .carousel-controls:hover {
-    opacity: 1;
 }
 
 .home-carousel .carousel-controls .carousel-control {
@@ -155,7 +166,7 @@ a:hover {
     align-items: center;
     height: 65px;
     width: 65px;
-    background: #000;
+    background: #101010;
     color: #fff;
     transition: opacity 0.3s linear;
 }
@@ -171,7 +182,7 @@ a:hover {
 .portrait-image {
     width: 160px;
     height: 160px;
-    border: 10px solid #0c0c0c;
+    border: 16px solid #0c0c0c;
 }
 
 .portrait-image img {
@@ -216,7 +227,141 @@ a:hover {
 ===============================*/
 
 .section {
-    padding: 250px 0;
+    padding: 150px 0;
+}
+
+.section-header {
+    margin-bottom: 100px;
+}
+
+.section-header h1 {
+    font-size: 3em;
+    /* display: flex;
+    align-items: center; */
+}
+
+/* .section-header h1:after {
+    content: " ";
+    display: inline-block;
+    height: 1px;
+    width: 250px;
+    margin-left: 16px;
+    background: #f3f3f3;
+} */
+
+/*============================= 
+    About Image
+===============================*/
+
+.about-image {
+    height: 500px;
+    border: 16px solid #aeaeae;
+}
+
+.about-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*============================= 
+    Portfolio Filters
+===============================*/
+
+.portfolio-filters .nav-item .nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    color: #f3f3f3;
+    opacity: 0.5;
+    transition: opacity 0.3s linear;
+}
+
+.portfolio-filters .nav-item .nav-link:hover {
+    opacity: 0.8;
+}
+
+.portfolio-filters .nav-item .nav-link.active {
+    opacity: 1;
+}
+
+/*============================= 
+    Portfolio Item
+===============================*/
+
+.portfolio-item {
+    margin-bottom: 30px;
+    position: relative;
+    height: 450px;
+}
+
+.portfolio-item:hover .portfolio-item-info {
+    opacity: 1;
+}
+
+.portfolio-item-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    text-align: center;
+    background: rgba(0,0,0,0.95);
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.portfolio-item-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio-item-info p {
+    margin: 8px 0;
+    font-size: 12px;
+}
+
+.portfolio-item-info a {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.portfolio-item-info a:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    margin-left: 8px;
+    background-color: #fff;
+    transition: width 0.3s linear;
+}
+
+.portfolio-item-info a:hover {
+    text-decoration: none;
+}
+
+.portfolio-item-info a:hover:after {
+    width: 60px;
+}
+
+/*============================= 
+    Button
+===============================*/
+
+.btn {
+    padding: 8px 24px;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
 }
 
 /*============================= 
@@ -235,5 +380,32 @@ a:hover {
 
     .home-carousel .carousel-sub-item .carousel-item-info h2 {
         font-size: 20px;
+    }
+
+    /*============================= 
+        Portfolio Item
+    ===============================*/
+
+    .portfolio-item {
+        height: auto;
+        background: #0c0c0c;
+    }
+
+    .portfolio-item-info h2 {
+         font-size: 24px;
+    }
+
+    .portfolio-item-image {
+        height: 300px;
+    }
+
+    .portfolio-item-info a {
+        margin-top: 8px;
+    }
+
+    .portfolio-item-info {
+        position: relative;
+        padding: 16px;
+        opacity: 1;
     }
 }
